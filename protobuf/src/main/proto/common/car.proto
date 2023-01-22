@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.example.protobufs.models";
+
+message  Car  {
+  string make = 1;
+  BodyStyle body_style = 2; // _ recommended
+}
+
+enum BodyStyle
+{
+  UNKNOWN = 0;
+  SEDAN = 1 ;
+  COUPE = 2;
+  SUV = 3;
+}
